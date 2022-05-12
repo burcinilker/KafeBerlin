@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace KafeBerlin.Ui
 {
-    public partial class Form1 : Form
+    public partial class SiparisForm : Form
     {
-        public Form1()
+        public SiparisForm()
         {
             InitializeComponent();
         }
+
     }
 }
