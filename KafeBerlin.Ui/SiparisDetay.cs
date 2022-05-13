@@ -11,11 +11,11 @@ namespace KafeBerlin.Ui
         public string UrunAd { get; set; }
         public decimal BirimFiyat { get; set; }
         public int Adet { get; set; }
-        public string TutarTL { get; private set; }
+        public string TutarTL => $"{Tutar():c2}";
         
         public decimal Tutar()
         {
-            return 1;
+            return BirimFiyat * Adet;
         }
     }
 }

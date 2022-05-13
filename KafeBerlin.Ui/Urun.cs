@@ -14,7 +14,8 @@ namespace KafeBerlin.Ui
 
         public override string ToString()
         {
-            return base.ToString();
+            return $"{UrunAd} {BirimFiyat:c2}";
         }
+        //c2 yazıldığınnda sizin kültürünüzdeki paranız nasıl yazılıyorsa öyle gösterilir
     }
 }

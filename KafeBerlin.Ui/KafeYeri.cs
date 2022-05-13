@@ -8,10 +8,10 @@ namespace KafeBerlin.Ui
 {
     public class KafeYeri
     {
-        public int MasaAdet { get; set; }
-        public List<Urun> Urunler { get; set; }
-        public List<Siparis> AktifSiparisler { get; set; }
-        public List<Siparis> GecmisSiparisler { get; set; }
+        public int MasaAdet { get; set; } = 20; // default olarak 20 masayla başlasın
+        public List<Urun> Urunler { get; set; }=new List<Urun>(); // default değerleri
+        public List<Siparis> AktifSiparisler { get; set; }=new List<Siparis>();
+        public List<Siparis> GecmisSiparisler { get; set; }=new List<Siparis>();
 
     }
 }

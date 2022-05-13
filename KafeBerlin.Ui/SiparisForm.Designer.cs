@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnEkle = new System.Windows.Forms.Button();
+            this.dgvDetaylar = new System.Windows.Forms.DataGridView();
+            this.nudAdet = new System.Windows.Forms.NumericUpDown();
+            this.cboUrun = new System.Windows.Forms.ComboBox();
+            this.cboMasaNo = new System.Windows.Forms.ComboBox();
+            this.btnTasi = new System.Windows.Forms.Button();
+            this.lblMasaNo = new System.Windows.Forms.Label();
+            this.btnSiparisIptal = new System.Windows.Forms.Button();
+            this.btnOdemeAl = new System.Windows.Forms.Button();
+            this.btnAnaSayfayaDon = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.lblOdemeTutari = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetaylar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAdet)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -57,119 +57,119 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Ürün";
             // 
-            // button1
+            // btnEkle
             // 
-            this.button1.Location = new System.Drawing.Point(493, 46);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(165, 41);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "EKLE";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnEkle.Location = new System.Drawing.Point(493, 46);
+            this.btnEkle.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEkle.Name = "btnEkle";
+            this.btnEkle.Size = new System.Drawing.Size(165, 41);
+            this.btnEkle.TabIndex = 1;
+            this.btnEkle.Text = "EKLE";
+            this.btnEkle.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dgvDetaylar
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvDetaylar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(24, 95);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(645, 593);
-            this.dataGridView1.TabIndex = 2;
+            this.dgvDetaylar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDetaylar.Location = new System.Drawing.Point(24, 95);
+            this.dgvDetaylar.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvDetaylar.Name = "dgvDetaylar";
+            this.dgvDetaylar.RowHeadersWidth = 62;
+            this.dgvDetaylar.RowTemplate.Height = 28;
+            this.dgvDetaylar.Size = new System.Drawing.Size(645, 593);
+            this.dgvDetaylar.TabIndex = 2;
             // 
-            // numericUpDown1
+            // nudAdet
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(314, 49);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(134, 30);
-            this.numericUpDown1.TabIndex = 3;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.nudAdet.Location = new System.Drawing.Point(314, 49);
+            this.nudAdet.Name = "nudAdet";
+            this.nudAdet.Size = new System.Drawing.Size(134, 30);
+            this.nudAdet.TabIndex = 3;
+            this.nudAdet.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
             // 
-            // comboBox1
+            // cboUrun
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(24, 46);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(253, 33);
-            this.comboBox1.TabIndex = 4;
+            this.cboUrun.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboUrun.FormattingEnabled = true;
+            this.cboUrun.Location = new System.Drawing.Point(24, 46);
+            this.cboUrun.Name = "cboUrun";
+            this.cboUrun.Size = new System.Drawing.Size(253, 33);
+            this.cboUrun.TabIndex = 4;
             // 
-            // comboBox2
+            // cboMasaNo
             // 
-            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(747, 54);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(161, 33);
-            this.comboBox2.TabIndex = 5;
+            this.cboMasaNo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cboMasaNo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMasaNo.FormattingEnabled = true;
+            this.cboMasaNo.Location = new System.Drawing.Point(747, 54);
+            this.cboMasaNo.Name = "cboMasaNo";
+            this.cboMasaNo.Size = new System.Drawing.Size(161, 33);
+            this.cboMasaNo.TabIndex = 5;
             // 
-            // button2
+            // btnTasi
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(935, 51);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(165, 36);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "TAŞI";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnTasi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTasi.Location = new System.Drawing.Point(935, 51);
+            this.btnTasi.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTasi.Name = "btnTasi";
+            this.btnTasi.Size = new System.Drawing.Size(165, 36);
+            this.btnTasi.TabIndex = 6;
+            this.btnTasi.Text = "TAŞI";
+            this.btnTasi.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // lblMasaNo
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.BackColor = System.Drawing.Color.Tomato;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.ForeColor = System.Drawing.Color.SeaShell;
-            this.label2.Location = new System.Drawing.Point(747, 95);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(353, 200);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "00";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblMasaNo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblMasaNo.BackColor = System.Drawing.Color.Tomato;
+            this.lblMasaNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMasaNo.ForeColor = System.Drawing.Color.SeaShell;
+            this.lblMasaNo.Location = new System.Drawing.Point(747, 95);
+            this.lblMasaNo.Name = "lblMasaNo";
+            this.lblMasaNo.Size = new System.Drawing.Size(353, 200);
+            this.lblMasaNo.TabIndex = 7;
+            this.lblMasaNo.Text = "00";
+            this.lblMasaNo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button3
+            // btnSiparisIptal
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.BackColor = System.Drawing.Color.DarkRed;
-            this.button3.ForeColor = System.Drawing.Color.AliceBlue;
-            this.button3.Location = new System.Drawing.Point(760, 462);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(176, 86);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "SİPARİŞ İPTAL";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnSiparisIptal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSiparisIptal.BackColor = System.Drawing.Color.DarkRed;
+            this.btnSiparisIptal.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btnSiparisIptal.Location = new System.Drawing.Point(760, 462);
+            this.btnSiparisIptal.Name = "btnSiparisIptal";
+            this.btnSiparisIptal.Size = new System.Drawing.Size(176, 86);
+            this.btnSiparisIptal.TabIndex = 8;
+            this.btnSiparisIptal.Text = "SİPARİŞ İPTAL";
+            this.btnSiparisIptal.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnOdemeAl
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.BackColor = System.Drawing.Color.SeaGreen;
-            this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button4.Location = new System.Drawing.Point(952, 462);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(169, 86);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "ÖDEME AL";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnOdemeAl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOdemeAl.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnOdemeAl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnOdemeAl.Location = new System.Drawing.Point(952, 462);
+            this.btnOdemeAl.Name = "btnOdemeAl";
+            this.btnOdemeAl.Size = new System.Drawing.Size(169, 86);
+            this.btnOdemeAl.TabIndex = 9;
+            this.btnOdemeAl.Text = "ÖDEME AL";
+            this.btnOdemeAl.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnAnaSayfayaDon
             // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button5.BackColor = System.Drawing.Color.Gold;
-            this.button5.Location = new System.Drawing.Point(760, 572);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(357, 86);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "ANASAYFAYA DÖN";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnAnaSayfayaDon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAnaSayfayaDon.BackColor = System.Drawing.Color.Gold;
+            this.btnAnaSayfayaDon.Location = new System.Drawing.Point(760, 572);
+            this.btnAnaSayfayaDon.Name = "btnAnaSayfayaDon";
+            this.btnAnaSayfayaDon.Size = new System.Drawing.Size(357, 86);
+            this.btnAnaSayfayaDon.TabIndex = 10;
+            this.btnAnaSayfayaDon.Text = "ANASAYFAYA DÖN";
+            this.btnAnaSayfayaDon.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -203,44 +203,44 @@
             this.label5.Text = "Ödeme Tutarı :";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label6
+            // lblOdemeTutari
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(999, 368);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 25);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "0,00₺";
+            this.lblOdemeTutari.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblOdemeTutari.AutoSize = true;
+            this.lblOdemeTutari.Location = new System.Drawing.Point(999, 368);
+            this.lblOdemeTutari.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblOdemeTutari.Name = "lblOdemeTutari";
+            this.lblOdemeTutari.Size = new System.Drawing.Size(66, 25);
+            this.lblOdemeTutari.TabIndex = 14;
+            this.lblOdemeTutari.Text = "0,00₺";
             // 
             // SiparisForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1185, 713);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lblOdemeTutari);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAnaSayfayaDon);
+            this.Controls.Add(this.btnOdemeAl);
+            this.Controls.Add(this.btnSiparisIptal);
+            this.Controls.Add(this.lblMasaNo);
+            this.Controls.Add(this.btnTasi);
+            this.Controls.Add(this.cboMasaNo);
+            this.Controls.Add(this.cboUrun);
+            this.Controls.Add(this.nudAdet);
+            this.Controls.Add(this.dgvDetaylar);
+            this.Controls.Add(this.btnEkle);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(1196, 745);
             this.Name = "SiparisForm";
             this.Text = "Masa 0";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetaylar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAdet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -249,19 +249,19 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnEkle;
+        private System.Windows.Forms.DataGridView dgvDetaylar;
+        private System.Windows.Forms.NumericUpDown nudAdet;
+        private System.Windows.Forms.ComboBox cboUrun;
+        private System.Windows.Forms.ComboBox cboMasaNo;
+        private System.Windows.Forms.Button btnTasi;
+        private System.Windows.Forms.Label lblMasaNo;
+        private System.Windows.Forms.Button btnSiparisIptal;
+        private System.Windows.Forms.Button btnOdemeAl;
+        private System.Windows.Forms.Button btnAnaSayfayaDon;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblOdemeTutari;
     }
 }
