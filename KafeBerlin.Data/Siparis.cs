@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KafeBerlin.Ui
+namespace KafeBerlin.Data
 {
     public class Siparis
     {

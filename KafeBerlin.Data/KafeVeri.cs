@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KafeBerlin.Ui
+namespace KafeBerlin.Data
 {
-    public class KafeYeri
+    public class KafeVeri
     {
         public int MasaAdet { get; set; } = 20; // default olarak 20 masayla başlasın
         public List<Urun> Urunler { get; set; }=new List<Urun>(); // default değerleri

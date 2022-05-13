@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnaForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tsmiUrunler = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiGecmisSiparisler = new System.Windows.Forms.ToolStripMenuItem();
             this.lvwMasalar = new System.Windows.Forms.ListView();
+            this.imlBuyuk = new System.Windows.Forms.ImageList(this.components);
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,7 +47,7 @@
             this.tsmiGecmisSiparisler});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(896, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(896, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -64,11 +67,20 @@
             // 
             this.lvwMasalar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lvwMasalar.HideSelection = false;
-            this.lvwMasalar.Location = new System.Drawing.Point(0, 36);
+            this.lvwMasalar.LargeImageList = this.imlBuyuk;
+            this.lvwMasalar.Location = new System.Drawing.Point(0, 33);
             this.lvwMasalar.Name = "lvwMasalar";
-            this.lvwMasalar.Size = new System.Drawing.Size(896, 572);
+            this.lvwMasalar.Size = new System.Drawing.Size(896, 575);
             this.lvwMasalar.TabIndex = 1;
             this.lvwMasalar.UseCompatibleStateImageBehavior = false;
+            this.lvwMasalar.DoubleClick += new System.EventHandler(this.lvwMasalar_DoubleClick);
+            // 
+            // imlBuyuk
+            // 
+            this.imlBuyuk.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imlBuyuk.ImageStream")));
+            this.imlBuyuk.TransparentColor = System.Drawing.Color.Transparent;
+            this.imlBuyuk.Images.SetKeyName(0, "bos");
+            this.imlBuyuk.Images.SetKeyName(1, "dolu");
             // 
             // AnaForm
             // 
@@ -93,6 +105,7 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiUrunler;
         private System.Windows.Forms.ToolStripMenuItem tsmiGecmisSiparisler;
         private System.Windows.Forms.ListView lvwMasalar;
+        private System.Windows.Forms.ImageList imlBuyuk;
     }
 }
 

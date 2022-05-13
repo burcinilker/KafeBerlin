@@ -4,18 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KafeBerlin.Ui
+namespace KafeBerlin.Data
 {
-    public class SiparisDetay
+    public class Urun
     {
         public string UrunAd { get; set; }
+
         public decimal BirimFiyat { get; set; }
-        public int Adet { get; set; }
-        public string TutarTL => $"{Tutar():c2}";
-        
-        public decimal Tutar()
+
+        public override string ToString()
         {
-            return BirimFiyat * Adet;
+            return $"{UrunAd} {BirimFiyat:c2}";
         }
+        //c2 yazıldığınnda sizin kültürünüzdeki paranız nasıl yazılıyorsa öyle gösterilir
     }
 }

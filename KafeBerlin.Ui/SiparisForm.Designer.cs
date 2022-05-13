@@ -66,24 +66,35 @@
             this.btnEkle.TabIndex = 1;
             this.btnEkle.Text = "EKLE";
             this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // dgvDetaylar
             // 
+            this.dgvDetaylar.AllowUserToAddRows = false;
             this.dgvDetaylar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvDetaylar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDetaylar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDetaylar.Location = new System.Drawing.Point(24, 95);
             this.dgvDetaylar.Margin = new System.Windows.Forms.Padding(4);
             this.dgvDetaylar.Name = "dgvDetaylar";
+            this.dgvDetaylar.ReadOnly = true;
+            this.dgvDetaylar.RowHeadersVisible = false;
             this.dgvDetaylar.RowHeadersWidth = 62;
             this.dgvDetaylar.RowTemplate.Height = 28;
+            this.dgvDetaylar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDetaylar.Size = new System.Drawing.Size(645, 593);
             this.dgvDetaylar.TabIndex = 2;
             // 
             // nudAdet
             // 
             this.nudAdet.Location = new System.Drawing.Point(314, 49);
+            this.nudAdet.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.nudAdet.Name = "nudAdet";
             this.nudAdet.Size = new System.Drawing.Size(134, 30);
             this.nudAdet.TabIndex = 3;
