@@ -70,5 +70,10 @@ namespace KafeBerlin.Ui
         {
             new UrunlerForm(db).ShowDialog(); //Urunler formunda db nesnesini gönderdik
         }
+
+        private void tsmiGecmisSiparisler_Click(object sender, EventArgs e)
+        {
+            new GecmisSiparislerForm(db).ShowDialog();
+        }
     }
 }

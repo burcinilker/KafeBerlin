@@ -16,7 +16,7 @@ namespace KafeBerlin.Ui
         private readonly KafeVeri _db;
         private readonly Siparis _siparis;
         BindingList<SiparisDetay> _blSiparisDetaylar;
-        public SiparisForm(KafeVeri db,Siparis siparis)
+        public SiparisForm(KafeVeri db, Siparis siparis)
         {
             InitializeComponent();
             _siparis = siparis;
@@ -55,7 +55,7 @@ namespace KafeBerlin.Ui
         private void MasaNoGuncelle()
         {
             Text = $"Masa {_siparis.MasaNo}";
-            lblMasaNo.Text =_siparis.MasaNo.ToString("00");
+            lblMasaNo.Text = _siparis.MasaNo.ToString("00");
         }
 
         private void btnEkle_Click(object sender, EventArgs e)
@@ -65,14 +65,14 @@ namespace KafeBerlin.Ui
                 MessageBox.Show("Önce bir ürün seçiniz");
                 return;
             }
-            Urun urun =(Urun)cboUrun.SelectedItem;
+            Urun urun = (Urun)cboUrun.SelectedItem;
             _blSiparisDetaylar.Add(new SiparisDetay()
             {
                 Adet = (int)nudAdet.Value,
-                UrunAd =urun.UrunAd,
-                BirimFiyat=urun.BirimFiyat,
+                UrunAd = urun.UrunAd,
+                BirimFiyat = urun.BirimFiyat,
 
-            }) ;
+            });
 
             nudAdet.Value = 1;
         }
@@ -104,10 +104,10 @@ namespace KafeBerlin.Ui
             //_db.GecmisSiparisler.Add(_siparis);
             //DialogResult = DialogResult.OK;
         }
-        void SiparisKapat(decimal odenenTutar,SiparisDurum durum)
+        void SiparisKapat(decimal odenenTutar, SiparisDurum durum)
         {
             string eylem = durum == SiparisDurum.Iptal ? "iptal edilecektir" : "kaptılacaktır";
-            string baslik = durum == SiparisDurum.Iptal ? "iptal" : "Kapatma"; 
+            string baslik = durum == SiparisDurum.Iptal ? "iptal" : "Kapatma";
             DialogResult dr = MessageBox.Show($"{_siparis.MasaNo} nolu masanın siparişi {eylem} .Emin misiniz?",
                 $"Masa {baslik} Onayı",
                 MessageBoxButtons.YesNo,
@@ -115,11 +115,12 @@ namespace KafeBerlin.Ui
                 MessageBoxDefaultButton.Button2);
             if (dr == DialogResult.Yes)
             {
-            _siparis.OdenenTutar = odenenTutar;
-            _siparis.Durum = durum;
-            _db.AktifSiparisler.Remove(_siparis);
-            _db.GecmisSiparisler.Add(_siparis);
-            DialogResult = DialogResult.OK;
+                _siparis.OdenenTutar = odenenTutar;
+                _siparis.Durum = durum;
+                _siparis.KapanisZamani = DateTime.Now;
+                _db.AktifSiparisler.Remove(_siparis);
+                _db.GecmisSiparisler.Add(_siparis);
+                DialogResult = DialogResult.OK;
 
             }
         }

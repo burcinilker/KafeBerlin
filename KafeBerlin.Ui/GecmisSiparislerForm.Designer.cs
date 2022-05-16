@@ -64,15 +64,24 @@
             // 
             // dgvSiparisler
             // 
+            this.dgvSiparisler.AllowUserToAddRows = false;
+            this.dgvSiparisler.AllowUserToDeleteRows = false;
+            this.dgvSiparisler.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvSiparisler.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvSiparisler.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvSiparisler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSiparisler.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvSiparisler.Location = new System.Drawing.Point(0, 40);
+            this.dgvSiparisler.MultiSelect = false;
             this.dgvSiparisler.Name = "dgvSiparisler";
+            this.dgvSiparisler.ReadOnly = true;
+            this.dgvSiparisler.RowHeadersVisible = false;
             this.dgvSiparisler.RowHeadersWidth = 62;
             this.dgvSiparisler.RowTemplate.Height = 28;
+            this.dgvSiparisler.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSiparisler.Size = new System.Drawing.Size(1049, 357);
             this.dgvSiparisler.TabIndex = 1;
+            this.dgvSiparisler.SelectionChanged += new System.EventHandler(this.dgvSiparisler_SelectionChanged);
             // 
             // label1
             // 
@@ -86,13 +95,21 @@
             // 
             // dgvDetaylar
             // 
+            this.dgvDetaylar.AllowUserToAddRows = false;
+            this.dgvDetaylar.AllowUserToDeleteRows = false;
+            this.dgvDetaylar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvDetaylar.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvDetaylar.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvDetaylar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDetaylar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvDetaylar.Location = new System.Drawing.Point(0, 48);
+            this.dgvDetaylar.MultiSelect = false;
             this.dgvDetaylar.Name = "dgvDetaylar";
+            this.dgvDetaylar.ReadOnly = true;
+            this.dgvDetaylar.RowHeadersVisible = false;
             this.dgvDetaylar.RowHeadersWidth = 62;
             this.dgvDetaylar.RowTemplate.Height = 28;
+            this.dgvDetaylar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDetaylar.Size = new System.Drawing.Size(1049, 287);
             this.dgvDetaylar.TabIndex = 1;
             // 
