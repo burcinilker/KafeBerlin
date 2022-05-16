@@ -57,8 +57,8 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.dgvDetaylar);
             this.splitContainer1.Panel2.Controls.Add(this.label2);
-            this.splitContainer1.Size = new System.Drawing.Size(1022, 711);
-            this.splitContainer1.SplitterDistance = 376;
+            this.splitContainer1.Size = new System.Drawing.Size(1049, 752);
+            this.splitContainer1.SplitterDistance = 397;
             this.splitContainer1.SplitterWidth = 20;
             this.splitContainer1.TabIndex = 0;
             // 
@@ -71,7 +71,7 @@
             this.dgvSiparisler.Name = "dgvSiparisler";
             this.dgvSiparisler.RowHeadersWidth = 62;
             this.dgvSiparisler.RowTemplate.Height = 28;
-            this.dgvSiparisler.Size = new System.Drawing.Size(1022, 336);
+            this.dgvSiparisler.Size = new System.Drawing.Size(1049, 357);
             this.dgvSiparisler.TabIndex = 1;
             // 
             // label1
@@ -80,7 +80,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1022, 40);
+            this.label1.Size = new System.Drawing.Size(1049, 40);
             this.label1.TabIndex = 0;
             this.label1.Text = "Siparişler";
             // 
@@ -93,7 +93,7 @@
             this.dgvDetaylar.Name = "dgvDetaylar";
             this.dgvDetaylar.RowHeadersWidth = 62;
             this.dgvDetaylar.RowTemplate.Height = 28;
-            this.dgvDetaylar.Size = new System.Drawing.Size(1022, 267);
+            this.dgvDetaylar.Size = new System.Drawing.Size(1049, 287);
             this.dgvDetaylar.TabIndex = 1;
             // 
             // label2
@@ -102,7 +102,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1022, 48);
+            this.label2.Size = new System.Drawing.Size(1049, 48);
             this.label2.TabIndex = 0;
             this.label2.Text = "Sipariş Detayları";
             // 
@@ -110,10 +110,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1022, 711);
+            this.ClientSize = new System.Drawing.Size(1049, 752);
             this.Controls.Add(this.splitContainer1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Name = "GecmisSiparislerForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "GecmisSiparislerForm";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);

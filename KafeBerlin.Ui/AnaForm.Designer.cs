@@ -47,7 +47,7 @@
             this.tsmiGecmisSiparisler});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(896, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1074, 36);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -56,6 +56,7 @@
             this.tsmiUrunler.Name = "tsmiUrunler";
             this.tsmiUrunler.Size = new System.Drawing.Size(85, 29);
             this.tsmiUrunler.Text = "Ürünler";
+            this.tsmiUrunler.Click += new System.EventHandler(this.tsmiUrunler_Click);
             // 
             // tsmiGecmisSiparisler
             // 
@@ -68,11 +69,12 @@
             this.lvwMasalar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lvwMasalar.HideSelection = false;
             this.lvwMasalar.LargeImageList = this.imlBuyuk;
-            this.lvwMasalar.Location = new System.Drawing.Point(0, 33);
+            this.lvwMasalar.Location = new System.Drawing.Point(0, 36);
             this.lvwMasalar.Name = "lvwMasalar";
-            this.lvwMasalar.Size = new System.Drawing.Size(896, 575);
+            this.lvwMasalar.Size = new System.Drawing.Size(1074, 719);
             this.lvwMasalar.TabIndex = 1;
             this.lvwMasalar.UseCompatibleStateImageBehavior = false;
+            this.lvwMasalar.SelectedIndexChanged += new System.EventHandler(this.lvwMasalar_SelectedIndexChanged);
             this.lvwMasalar.DoubleClick += new System.EventHandler(this.lvwMasalar_DoubleClick);
             // 
             // imlBuyuk
@@ -86,11 +88,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(896, 608);
+            this.ClientSize = new System.Drawing.Size(1074, 755);
             this.Controls.Add(this.lvwMasalar);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "AnaForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kafe Berlin";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

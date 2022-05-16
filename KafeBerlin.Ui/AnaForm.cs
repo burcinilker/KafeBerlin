@@ -50,7 +50,25 @@ namespace KafeBerlin.Ui
                 lvi.ImageKey = "dolu";
             }
             //sipariş yoksa oluşturduk varsa olanı bulduk getirdik
-            new SiparisForm(db, siparis).ShowDialog();
+            //new SiparisForm(db, siparis).ShowDialog();
+
+            DialogResult dr = new SiparisForm(db,siparis).ShowDialog();
+            if (dr == DialogResult.OK)
+            {
+                lvi.ImageKey = "bos";
+                lvi.Selected = false;
+            }
+
+        }
+
+        private void lvwMasalar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tsmiUrunler_Click(object sender, EventArgs e)
+        {
+            new UrunlerForm(db).ShowDialog(); //Urunler formunda db nesnesini gönderdik
         }
     }
 }
