@@ -12,6 +12,9 @@ namespace KafeBerlin.Data
         public List<Urun> Urunler { get; set; }=new List<Urun>(); // default değerleri
         public List<Siparis> AktifSiparisler { get; set; }=new List<Siparis>();
         public List<Siparis> GecmisSiparisler { get; set; }=new List<Siparis>();
-
+        public bool MasaDoluMu(int masaNo)
+        {
+            return AktifSiparisler.Any(x => x.MasaNo == masaNo);
+        }
     }
 }

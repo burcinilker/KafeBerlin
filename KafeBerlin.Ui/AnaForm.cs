@@ -48,7 +48,8 @@ namespace KafeBerlin.Ui
             for (int i = 1; i < db.MasaAdet; i++)
             {
                 var lvi = new ListViewItem($"Masa {i}");
-                lvi.ImageKey = db.AktifSiparisler.Any(x => x.MasaNo == i) ? "dolu" : "bos";
+                //lvi.ImageKey = db.AktifSiparisler.Any(x => x.MasaNo == i) ? "dolu" : "bos";
+                lvi.ImageKey = db.MasaDoluMu(i) ? "dolu" : "bos";
                 //lvi.ImageKey = "bos";
                 lvi.Tag = i; // list view item üzerinde daha sonra erişebilmek adına masa noyu saklıyoruz
                 lvwMasalar.Items.Add(lvi);
@@ -68,14 +69,33 @@ namespace KafeBerlin.Ui
             }
             //sipariş yoksa oluşturduk varsa olanı bulduk getirdik
             //new SiparisForm(db, siparis).ShowDialog();
-
-            DialogResult dr = new SiparisForm(db,siparis).ShowDialog();
+            var sf = new SiparisForm(db, siparis);
+            sf.MasaTasindi += Sf_MasaTasindi;
+            DialogResult dr = sf.ShowDialog();
             if (dr == DialogResult.OK)
             {
                 lvi.ImageKey = "bos";
                 lvi.Selected = false;
             }
 
+        }
+
+        private void Sf_MasaTasindi(object sender, MasaTasindiEventArgs e)
+        {
+            foreach (ListViewItem lvi in lvwMasalar.Items)
+            {
+                int masaNo = (int)lvi.Tag;
+                if (masaNo == e.EskiMasaNo)
+                {
+                    lvi.ImageKey = "bos";
+                    lvi.Selected=false;
+                }
+                else if (masaNo == e.YeniMasaNo)
+                {
+                    lvi.ImageKey = "dolu";
+                    lvi.Selected=true;
+                }
+            }
         }
 
         private void lvwMasalar_SelectedIndexChanged(object sender, EventArgs e)
